@@ -1,0 +1,21 @@
+Analysis Conclusions for Method of Simple Iterations (MSI)
+=========================================================
+
+1. Accuracy vs. Condition Number: Generally, the achievable accuracy (ActualError) degrades significantly as the condition number increases. For high condition numbers, the actual error can be much larger than the target tolerance, especially if the iteration limit is reached. MSI struggles with ill-conditioned systems.
+
+2. Time vs. Condition Number: Execution time tends to increase with the condition number. This is primarily because ill-conditioned systems require more iterations to converge (or hit the maximum iteration limit).
+
+3. Error vs. Target Tolerance: For well-conditioned matrices, the actual error generally tracks the target tolerance well. For ill-conditioned matrices, the actual error might plateau or be significantly higher than the target tolerance, indicating limitations of the method or precision limits.
+
+4. Iterations vs. Target Tolerance: Decreasing the target tolerance (requiring higher accuracy) increases the number of iterations needed. This effect is much more pronounced for ill-conditioned matrices, which may hit the maximum iteration limit even for relatively modest tolerances.
+
+5. Error Decrease per Iteration: For well-conditioned matrices, the error typically decreases steadily (often linearly on a log scale) with iterations. For ill-conditioned matrices, convergence is much slower, potentially stalling or exhibiting erratic behavior before reaching the desired tolerance or the iteration limit.
+
+6. Small Determinant Behavior: While the determinant wasn't explicitly calculated, matrices with very high condition numbers (e.g., > 1e6) often have determinants close to zero (due to small singular values). The plots for high condition numbers (Plots 1-5) illustrate the behavior in these near-singular cases: slow convergence, poor accuracy relative to tolerance, high iteration counts, and increased sensitivity to the iteration parameter `tau` (potentially leading to divergence if `tau` is not chosen carefully).
+
+
+General Remarks:
+- The Method of Simple Iterations is conceptually simple but converges relatively slowly.
+- Its performance is highly dependent on the matrix's properties, especially the condition number.
+- It is generally not robust for ill-conditioned (near-singular) systems.
+- The choice of the iteration parameter `tau` is crucial for convergence and speed; the method used here (based on ||A||_inf) is a simple but not necessarily optimal choice.

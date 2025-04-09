@@ -1,0 +1,3 @@
+﻿  LU.c
+C:\Users\28arh\source\repos\nummetods_1_2\nummetods_1_2\LU.c(207,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  nummetods_1_2.vcxproj -> C:\Users\28arh\source\repos\nummetods_1_2\x64\Debug\nummetods_1_2.exe

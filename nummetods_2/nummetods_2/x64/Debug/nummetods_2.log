@@ -1,7 +1,0 @@
-﻿  lu.c
-C:\Users\28arh\source\repos\nummetods_2\nummetods_2\lu.c(41,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  main.c
-  matrix.c
-  utils.c
-  Generating Code...
-  nummetods_2.vcxproj -> C:\Users\28arh\source\repos\nummetods_2\x64\Debug\nummetods_2.exe

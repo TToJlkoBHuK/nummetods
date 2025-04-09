@@ -1,0 +1,5 @@
+SeparabilityType	ShiftType	Iterations	EigenvalueError	EigenvectorError
+Good	Constant	8	4.4408920985e-16	1.6202545728e-10
+Good	Variable	3	4.4408920985e-16	2.9355700100e-11
+Bad	Constant	134	4.4408920985e-16	9.7716056376e-08
+Bad	Variable	4	2.2204460493e-16	4.8724782470e-08

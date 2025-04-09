@@ -1,0 +1,172 @@
+Nonlinear Equation Solver Analysis
+==================================
+
+Task 1: Equations Defined
+- f1(x)=0.1x^2-xln(x)
+- f2(x)=x^4-3x^2+75x-9999
+- f3(x)=f1 with discontinuity at x=1.5
+----------------------------------------
+
+Task 2: Root Isolation
+
+Generating data for function plots...
+- Data saved to f1_data.txt, f2_data.txt, f3_data.txt
+- Plot these files using Python to visualize roots and discontinuity.
+
+Illustrating root separation sensitivity to step size (f2):
+Searching for intervals containing roots between 8.00 and 12.00 with step 1.0000
+Potential root found in interval [9.0000, 10.0000]
+----------------------------------------
+Searching for intervals containing roots between 8.00 and 12.00 with step 0.1000
+Potential root found in interval [9.8000, 9.9000]
+----------------------------------------
+Searching for intervals containing roots between -12.00 and -8.00 with step 0.1000
+Potential root found in interval [-10.3000, -10.2000]
+----------------------------------------
+Analytical Upper Bound for Positive Roots of f2 (Method 1): 10.9997
+Analytical Upper Bound for Absolute Value of Roots of f2 (Cauchy): 10000.0000
+=> Roots (if any) lie within [-10000.0000, 10000.0000]
+Selected intervals/guesses for analysis based on plots/search:
+f1: [1.00, 2.00]
+f2: [9.00, 11.00] (for positive root)
+f3: [1.00, 1.50] (before discontinuity)
+----------------------------------------
+
+Calculating high-precision reference roots...
+True root estimate for f1(x)=0.1x^2-xln(x): 1.1183255915896295 (found in 23 iterations)
+True root estimate for f2(x)=x^4-3x^2+75x-9999: 9.8857449882776418 (found in 20 iterations)
+True root estimate for f3(x)=f1 with discontinuity: 1.1183255915896295 (found in 17 iterations)
+----------------------------------------
+
+Task 3: Error vs. Iteration Analysis
+Running for f1(x)=0.1x^2-xln(x)...
+  Bisection for f1(x)=0.1x^2-xln(x) finished in 51 iterations (Status 0). Data saved to err_vs_iter_f1(x)=0.1x^2-xln(x)_bisec.txt
+  Hord for f1(x)=0.1x^2-xln(x) finished in 23 iterations (Status 0). Data saved to err_vs_iter_f1(x)=0.1x^2-xln(x)_Hord.txt
+Running for f2(x)=x^4-3x^2+75x-9999...
+  Bisection for f2(x)=x^4-3x^2+75x-9999 finished in 100 iterations (Status 1). Data saved to err_vs_iter_f2(x)=x^4-3x^2+75x-9999_bisec.txt
+  Hord for f2(x)=x^4-3x^2+75x-9999 finished in 20 iterations (Status 0). Data saved to err_vs_iter_f2(x)=x^4-3x^2+75x-9999_Hord.txt
+Running for f3(x)=f1 with discontinuity...
+  Bisection for f3(x)=f1 with discontinuity finished in 49 iterations (Status 0). Data saved to err_vs_iter_f3(x)=f1 with discontinuity_bisec.txt
+  Hord for f3(x)=f1 with discontinuity finished in 17 iterations (Status 0). Data saved to err_vs_iter_f3(x)=f1 with discontinuity_Hord.txt
+----------------------------------------
+
+Task 4: Achieved Error vs. Requested Tolerance Analysis
+Running for f1(x)=0.1x^2-xln(x)...
+  Data saved to err_vs_tol_f1(x)=0.1x^2-xln(x)_bisec.txt and err_vs_tol_f1(x)=0.1x^2-xln(x)_Hord.txt
+Running for f2(x)=x^4-3x^2+75x-9999...
+  Data saved to err_vs_tol_f2(x)=x^4-3x^2+75x-9999_bisec.txt and err_vs_tol_f2(x)=x^4-3x^2+75x-9999_Hord.txt
+Running for f3(x)=f1 with discontinuity...
+  Data saved to err_vs_tol_f3(x)=f1 with discontinuity_bisec.txt and err_vs_tol_f3(x)=f1 with discontinuity_Hord.txt
+----------------------------------------
+
+Task 5: Relative Error vs. Input Perturbation (for f2, Hord Method)
+Reference (unperturbed) root for f2: 9.8857449882776418
+  Running with perturbation: 1%
+    Sample 1: Hord failed with perturbation (Status 1)
+    Sample 2: Hord failed with perturbation (Status 1)
+    Sample 3: Hord failed with perturbation (Status 1)
+    Sample 4: Hord failed with perturbation (Status 1)
+    Sample 5: Hord failed with perturbation (Status 1)
+    Sample 6: Hord failed with perturbation (Status 1)
+    Sample 7: Hord failed with perturbation (Status 1)
+    Sample 8: Hord failed with perturbation (Status 1)
+    Sample 9: Hord failed with perturbation (Status 1)
+    Sample 10: Hord failed with perturbation (Status 1)
+    Sample 11: Hord failed with perturbation (Status 1)
+    Sample 12: Hord failed with perturbation (Status 1)
+    Sample 13: Hord failed with perturbation (Status 1)
+    Sample 14: Hord failed with perturbation (Status 1)
+    Sample 15: Hord failed with perturbation (Status 1)
+    Sample 16: Hord failed with perturbation (Status 1)
+    Sample 17: Hord failed with perturbation (Status 1)
+    Sample 18: Hord failed with perturbation (Status 1)
+    Sample 19: Hord failed with perturbation (Status 1)
+    Sample 20: Hord failed with perturbation (Status 1)
+  Running with perturbation: 2%
+    Sample 1: Hord failed with perturbation (Status 1)
+    Sample 2: Hord failed with perturbation (Status 1)
+    Sample 3: Hord failed with perturbation (Status 1)
+    Sample 4: Hord failed with perturbation (Status 1)
+    Sample 5: Hord failed with perturbation (Status 1)
+    Sample 6: Hord failed with perturbation (Status 1)
+    Sample 7: Hord failed with perturbation (Status 1)
+    Sample 8: Hord failed with perturbation (Status 1)
+    Sample 9: Hord failed with perturbation (Status 1)
+    Sample 10: Hord failed with perturbation (Status 1)
+    Sample 11: Hord failed with perturbation (Status 1)
+    Sample 12: Hord failed with perturbation (Status 1)
+    Sample 13: Hord failed with perturbation (Status 1)
+    Sample 14: Hord failed with perturbation (Status 1)
+    Sample 15: Hord failed with perturbation (Status 1)
+    Sample 16: Hord failed with perturbation (Status 1)
+    Sample 17: Hord failed with perturbation (Status 1)
+    Sample 18: Hord failed with perturbation (Status 1)
+    Sample 19: Hord failed with perturbation (Status 1)
+    Sample 20: Hord failed with perturbation (Status 1)
+  Running with perturbation: 3%
+    Sample 1: Hord failed with perturbation (Status 1)
+    Sample 2: Hord failed with perturbation (Status 1)
+    Sample 3: Hord failed with perturbation (Status 1)
+    Sample 4: Hord failed with perturbation (Status 1)
+    Sample 5: Hord failed with perturbation (Status 1)
+    Sample 6: Hord failed with perturbation (Status 1)
+    Sample 7: Hord failed with perturbation (Status 1)
+    Sample 8: Hord failed with perturbation (Status 1)
+    Sample 9: Hord failed with perturbation (Status 1)
+    Sample 10: Hord failed with perturbation (Status 1)
+    Sample 11: Hord failed with perturbation (Status 1)
+    Sample 12: Hord failed with perturbation (Status 1)
+    Sample 13: Hord failed with perturbation (Status 1)
+    Sample 14: Hord failed with perturbation (Status 1)
+    Sample 15: Hord failed with perturbation (Status 1)
+    Sample 16: Hord failed with perturbation (Status 1)
+    Sample 17: Hord failed with perturbation (Status 1)
+    Sample 18: Hord failed with perturbation (Status 1)
+    Sample 19: Hord failed with perturbation (Status 1)
+    Sample 20: Hord failed with perturbation (Status 1)
+  Running with perturbation: 4%
+    Sample 1: Hord failed with perturbation (Status 1)
+    Sample 2: Hord failed with perturbation (Status 1)
+    Sample 3: Hord failed with perturbation (Status 1)
+    Sample 4: Hord failed with perturbation (Status 1)
+    Sample 5: Hord failed with perturbation (Status 1)
+    Sample 6: Hord failed with perturbation (Status 1)
+    Sample 7: Hord failed with perturbation (Status 1)
+    Sample 8: Hord failed with perturbation (Status 1)
+    Sample 9: Hord failed with perturbation (Status 1)
+    Sample 10: Hord failed with perturbation (Status 1)
+    Sample 11: Hord failed with perturbation (Status 1)
+    Sample 12: Hord failed with perturbation (Status 1)
+    Sample 13: Hord failed with perturbation (Status 1)
+    Sample 14: Hord failed with perturbation (Status 1)
+    Sample 15: Hord failed with perturbation (Status 1)
+    Sample 16: Hord failed with perturbation (Status 1)
+    Sample 17: Hord failed with perturbation (Status 1)
+    Sample 18: Hord failed with perturbation (Status 1)
+    Sample 19: Hord failed with perturbation (Status 1)
+    Sample 20: Hord failed with perturbation (Status 1)
+  Running with perturbation: 5%
+    Sample 1: Hord failed with perturbation (Status 1)
+    Sample 2: Hord failed with perturbation (Status 1)
+    Sample 3: Hord failed with perturbation (Status 1)
+    Sample 4: Hord failed with perturbation (Status 1)
+    Sample 5: Hord failed with perturbation (Status 1)
+    Sample 6: Hord failed with perturbation (Status 1)
+    Sample 7: Hord failed with perturbation (Status 1)
+    Sample 8: Hord failed with perturbation (Status 1)
+    Sample 9: Hord failed with perturbation (Status 1)
+    Sample 10: Hord failed with perturbation (Status 1)
+    Sample 11: Hord failed with perturbation (Status 1)
+    Sample 12: Hord failed with perturbation (Status 1)
+    Sample 13: Hord failed with perturbation (Status 1)
+    Sample 14: Hord failed with perturbation (Status 1)
+    Sample 15: Hord failed with perturbation (Status 1)
+    Sample 16: Hord failed with perturbation (Status 1)
+    Sample 17: Hord failed with perturbation (Status 1)
+    Sample 18: Hord failed with perturbation (Status 1)
+    Sample 19: Hord failed with perturbation (Status 1)
+    Sample 20: Hord failed with perturbation (Status 1)
+  Perturbation data saved to perturb_f2(x)=x^4-3x^2+75x-9999_Hord.txt
+----------------------------------------
+
+Analysis complete. Check generated .txt files and run plotter.py.
