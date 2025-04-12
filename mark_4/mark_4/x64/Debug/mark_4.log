@@ -1,0 +1,3 @@
+﻿  iter.c
+C:\Users\28arh\source\repos\mark_4\mark_4\iter.c(233,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  mark_4.vcxproj -> C:\Users\28arh\source\repos\mark_4\x64\Debug\mark_4.exe
