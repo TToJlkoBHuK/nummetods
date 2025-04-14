@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\28arh\source\repos\mark_6\mark_6\main.c(257,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  mark_6.vcxproj -> C:\Users\28arh\source\repos\mark_6\x64\Debug\mark_6.exe
